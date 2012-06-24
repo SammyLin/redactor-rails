@@ -1,6 +1,6 @@
-# Redactor::Rails
+# Rails 3.2 Integration for Redactor
 
-TODO: Write a gem description
+The redactor-rails gem integrates the [Redactor](http://redactorjs.com/) editor with the Rails 3.2 asset pipeline.
 
 ## Installation
 
@@ -10,15 +10,39 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
     $ gem install redactor-rails
 
-## Usage
+Create a `config/redactor.yml` file with your global configuration options:
 
-TODO: Write usage instructions here
+      lang: 'zh_tw'
+      autoresize: true
+
+See the [Redactor Documentation](http://redactorjs.com/docs/settings/) for a full list of configuration options.
+
+### Include the Redactor assets
+
+Add to your `application.js`:
+
+      //= require redactor-rails
+
+Add to your `application.css`:
+
+      *= require redactor-rails
+
+### Initialize Redactor
+
+For each textarea that you want to use with Redactor, add the "redactor" class and ensure it has a unique ID:
+
+    <%= text_area_tag :editor, "", :class => "redactor", :rows => 40, :cols => 120 %>
+
+Then invoke the `redactor` helper to initialize Redactor:
+
+    <%= redactor %>
+
 
 ## Contributing
 
