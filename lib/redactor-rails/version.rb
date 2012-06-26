@@ -1,5 +1,3 @@
-module Redactor
-  module Rails
-    VERSION = "0.0.1"
-  end
+module RedactorRails
+  VERSION = "0.1.0"
 end

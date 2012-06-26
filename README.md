@@ -16,6 +16,16 @@ Or install it yourself as:
 
     $ gem install redactor-rails
 
+### Now generate models for store uploading files
+
+#### ActiveRecord + carrierwave
+
+    gem "carrierwave"
+    gem "mini_magick"
+
+    $ rails generate redactor:install
+
+    $ rake db:migrate
 Create a `config/redactor.yml` file with your global configuration options:
 
       lang: 'zh_tw'

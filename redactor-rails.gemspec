@@ -13,5 +13,9 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "redactor-rails"
   gem.require_paths = ["lib"]
-  gem.version       = Redactor::Rails::VERSION
+  gem.version       = RedactorRails::VERSION
+
+  gem.add_dependency("mime-types")
+  gem.add_dependency("orm_adapter")
+
 end
