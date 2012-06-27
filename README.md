@@ -61,3 +61,9 @@ Then invoke the `redactor` helper to initialize Redactor:
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Statement
+
+`redactor-rails` part of reference [galetahub/ckeditor](https://github.com/galetahub/ckeditor) project.
+
+`redactor-rails` uses MIT-LICENSE. Rock!!!!!
