@@ -1,6 +1,5 @@
 class RedactorRails::PicturesController < ApplicationController
   def index
-    #@pictures = RedactorRails.picture_model.find_all.map {|picture| {"thumb" => picture.url_thumb, "image" => picture.url} }
     @pictures = RedactorRails.picture_model.find_all
     render :json => @pictures.to_json
 
