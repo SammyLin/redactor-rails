@@ -11,7 +11,7 @@ class RedactorRails::PicturesController < ApplicationController
     @picture.data = RedactorRails::Http.normalize_param(file, request)
 
     if @picture.save
-      render :text => "<img src=#{@picture.url}/>"
+      render :text => { :filelink => @picture.url }.to_json
     else
       render :nothing => true
     end
