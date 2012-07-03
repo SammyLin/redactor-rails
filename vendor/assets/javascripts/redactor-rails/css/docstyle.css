@@ -3,8 +3,8 @@ html {
 	margin: 0;
 }
 body {
-	font-family: "PT Sans", "Trebuchet MS", Verdana, Arial, Tahoma, sans-serif;      
-	font-size: 17px;
+	font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;      
+	font-size: 15px;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
@@ -20,6 +20,22 @@ body {
 }
 #page:focus {
 	outline: none;
+}
+
+a {
+	color: #15c;
+}
+
+object,
+embed,
+video,
+iframe {
+	width: auto;
+	max-width: 100%;
+}
+video,
+iframe {
+	height: auto;
 }
 
 ::selection {
