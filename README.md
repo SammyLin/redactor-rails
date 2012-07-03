@@ -31,6 +31,17 @@ Create a `config/redactor.yml` file with your global configuration options:
       lang: 'zh_tw'
       autoresize: true
 
+If You Want To setup a new language in Redactor you should do two things:
+
+In you global configuration `config/redactor.yml` set option
+
+    lang: 'zh_tw'
+and
+
+Add to your layout
+
+    <%= redactor_lang('zh_tw') %>
+
 See the [Redactor Documentation](http://redactorjs.com/docs/settings/) for a full list of configuration options.
 
 ### Include the Redactor assets
