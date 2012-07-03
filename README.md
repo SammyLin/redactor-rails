@@ -70,3 +70,12 @@ Then invoke the `redactor` helper to initialize Redactor:
 `redactor-rails` part of reference [galetahub/ckeditor](https://github.com/galetahub/ckeditor) project.
 
 `redactor-rails` uses MIT-LICENSE. Rock!!!!!
+
+## License
+
+the `redactor-rails` project is MIT-LICENSE.
+
+You may use `Redactor` for non-commercial websites for free, however, we do not guarantee any technical support.
+
+Redactor has [3 different licenses](http://redactorjs.com/download/) for commercial use.
+For details please see [License Agreement](http://redactorjs.com/download/).
