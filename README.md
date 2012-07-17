@@ -26,10 +26,17 @@ Or install it yourself as:
     $ rails generate redactor:install
 
     $ rake db:migrate
-Create a `config/redactor.yml` file with your global configuration options:
+Create a `config/redactor.yml` file with your global configuration options, like:
 
-      lang: 'zh_tw'
-      autoresize: true
+    lang: 'zh_tw'
+    autoresize: true
+    buttons:
+	- html
+	- '|'
+	- formatting
+	- '|'
+	- bold
+	- italic
 
 If You Want To setup a new language in Redactor you should do two things:
 
