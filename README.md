@@ -31,12 +31,12 @@ Create a `config/redactor.yml` file with your global configuration options, like
     lang: 'zh_tw'
     autoresize: true
     buttons:
-	- html
-	- '|'
-	- formatting
-	- '|'
-	- bold
-	- italic
+		- html
+		- '|'
+		- formatting
+		- '|'
+		- bold
+		- italic
 
 If You Want To setup a new language in Redactor you should do two things:
 
