@@ -8,8 +8,8 @@ module RedactorRails
 
     def self.defaults
       {
-	imageUpload: '/redactor_rails/pictures',
-	imageGetJson: '/redactor_rails/pictures'
+      	imageUpload: '/redactor_rails/pictures',
+      	imageGetJson: '/redactor_rails/pictures'
       }
     end
 
@@ -37,6 +37,5 @@ module RedactorRails
       config.load(filename) if File.exists?(filename)
       config
     end
-
   end
 end
