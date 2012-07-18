@@ -13,7 +13,7 @@ class RedactorRails::PicturesController < RedactorRails::ApplicationController
     @picture.data = RedactorRails::Http.normalize_param(file, request)
 
     if @picture.save
-      render :text => { :filelink => @picture.url }.to_json
+      render :text => { :filelink => @picture.url(:content) }.to_json
     else
       render :nothing => true
     end
