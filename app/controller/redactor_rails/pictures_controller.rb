@@ -1,9 +1,9 @@
-class RedactorRails::PicturesController < ApplicationController
+class RedactorRails::PicturesController < RedactorRails::ApplicationController
   def index
     @pictures = RedactorRails.picture_model.find_all
     render :json => @pictures.to_json
-
   end
+
   def create
     @picture = RedactorRails::Picture.new
 
@@ -16,5 +16,4 @@ class RedactorRails::PicturesController < ApplicationController
       render :nothing => true
     end
   end
-
 end
