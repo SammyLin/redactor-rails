@@ -7,7 +7,7 @@ module RedactorRails
     # Returns the JavaScript code required to initialize RedactorRailsjs.
     def redactor_javascript(options={})
       configuration = RedactorRails.configuration.merge(options)
-      "$(document).ready(function(){$('.redactor').redactor(#{configuration.options_for_redactor.to_json});});".html_safe
+      "$(document).ready(function(){$('.redactor').redactor(#{configuration.options_for_redactor.to_json});});"
     end
     # Setting Redactor Language
     def redactor_lang(lang = 'en')
