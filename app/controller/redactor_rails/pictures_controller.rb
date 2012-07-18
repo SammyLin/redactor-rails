@@ -1,7 +1,11 @@
 class RedactorRails::PicturesController < RedactorRails::ApplicationController
   def index
     authorize! :access, :redactor_rails
-    @pictures = RedactorRails.picture_model.find_all
+    if current_user
+      @pictures = RedactorRails.picture_model.where(["assetable_id = ? AND assetable_type = 'User'", current_user.id])
+    else
+      @pictures = RedactorRails.picture_model.find_all
+    end
     render :json => @pictures.to_json
   end
 
@@ -11,6 +15,10 @@ class RedactorRails::PicturesController < RedactorRails::ApplicationController
 
     file = params[:file]
     @picture.data = RedactorRails::Http.normalize_param(file, request)
+
+    if current_user
+      @picture.assetable = current_user
+    end
 
     if @picture.save
       render :text => { :filelink => @picture.url(:content) }.to_json
