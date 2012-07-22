@@ -1,6 +1,6 @@
 class RedactorRails::PicturesController < ApplicationController
   def index
-    @pictures = RedactorRails.picture_model.find_all
+    @pictures = RedactorRails.picture_model.find_all({})
     render :json => @pictures.to_json
 
   end
