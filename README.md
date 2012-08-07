@@ -48,7 +48,7 @@ For each textarea that you want to use with Redactor, add the "redactor" class a
 
 If you need change some config in redactor, you can
 
-    $ rails generate redactor:install
+    $ rails generate redactor:config
 
 Then generate `app\assets\redactor-rails\config.js`. 
 
