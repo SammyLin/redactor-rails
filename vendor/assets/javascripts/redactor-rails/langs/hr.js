@@ -63,7 +63,7 @@ RELANG['hr'] = {
 	align_right: 'Poravnaj desno',
 	align_justify: 'Od ruba do ruba',
 	horizontalrule: 'Horizontalna crta',
-	fullscreen: 'Prikaz preko èitavog ekrana',
+	fullscreen: 'Prikaz preko Ã¨itavog ekrana',
 	deleted: 'Izbrisano',
 	anchor: 'Sidro'
 };

@@ -13,14 +13,9 @@ module RedactorRails
   require 'redactor-rails/orm/active_record'
   require 'redactor-rails/engine'
   require 'redactor-rails/helper'
-  require 'redactor-rails/configuration'
 
   mattr_accessor :image_file_types
   @@image_file_types = ["jpg", "jpeg", "png", "gif", "tiff"]
-
-  def self.configuration
-    @configuration ||= Configuration.load(::Rails.root.join("config/redactor.yml"))
-  end
 
 
   def self.picture_model
