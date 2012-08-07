@@ -26,30 +26,7 @@ Or install it yourself as:
     $ rails generate redactor:install
 
     $ rake db:migrate
-Create a `config/redactor.yml` file with your global configuration options, like:
 
-    lang: 'zh_tw'
-    autoresize: true
-    buttons:
-		- html
-		- '|'
-		- formatting
-		- '|'
-		- bold
-		- italic
-
-If You Want To setup a new language in Redactor you should do two things:
-
-In you global configuration `config/redactor.yml` set option
-
-    lang: 'zh_tw'
-and
-
-Add to your layout
-
-    <%= redactor_lang('zh_tw') %>
-
-See the [Redactor Documentation](http://redactorjs.com/docs/settings/) for a full list of configuration options.
 
 ### Include the Redactor assets
 
@@ -67,9 +44,28 @@ For each textarea that you want to use with Redactor, add the "redactor" class a
 
     <%= text_area_tag :editor, "", :class => "redactor", :rows => 40, :cols => 120 %>
 
-Then invoke the `redactor` helper to initialize Redactor:
+### Custom Your redactor
 
-    <%= redactor %>
+If you need change some config in redactor, you can
+
+    $ rails generate redactor:install
+
+Then generate `app\assets\redactor-rails\config.js`. 
+
+See the [Redactor Documentation](http://redactorjs.com/docs/settings/) for a full list of configuration options.
+
+
+If You Want To setup a new language in Redactor you should do two things:
+
+In you file `app\assets\redactor-rails\config.js` set option
+
+    "lang":'zh_tw'
+    
+and
+
+Add to your layout
+
+    <%= redactor_lang('zh_tw') %>
 
 
 ## Contributing
