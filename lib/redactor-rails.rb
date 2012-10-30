@@ -13,6 +13,7 @@ module RedactorRails
   end
   require 'redactor-rails/orm/base'
   require 'redactor-rails/orm/active_record'
+  require 'redactor-rails/orm/mongoid'
   require 'redactor-rails/engine'
   require 'redactor-rails/helper'
 

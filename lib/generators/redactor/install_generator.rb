@@ -39,7 +39,9 @@ module Redactor
       end
 
       def create_migration
-  migration_template "#{generator_dir}/migration.rb", File.join('db/migrate', "create_redactor_assets.rb")
+        if orm == "active_record"
+          migration_template "#{generator_dir}/migration.rb", File.join('db/migrate', "create_redactor_assets.rb")
+        end
       end
 
       protected
