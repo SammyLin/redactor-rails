@@ -27,6 +27,12 @@ Or install it yourself as:
 
     $ rake db:migrate
 
+#### Mongoid + carrierwave
+    gem "carrierwave"
+    gem "carrierwave-mongoid", :require => "carrierwave/mongoid"
+    gem "mini_magick"
+
+    $ rails generate redactor:install
 
 ### Include the Redactor assets
 
