@@ -2,6 +2,8 @@
 
 The redactor-rails gem integrates the [Redactor](http://redactorjs.com/) editor with the Rails 3.2 asset pipeline.
 
+This gem bundles Redactor version 8.1.1 which is the most recent version as of October 18, 2012. Check [Redactor's changelog](http://imperavi.com/redactor/log/) for further updates.
+
 ## Installation
 
 Add this line to your application's Gemfile:
