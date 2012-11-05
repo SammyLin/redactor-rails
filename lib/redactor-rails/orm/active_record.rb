@@ -15,6 +15,7 @@ module RedactorRails
               self.table_name = "redactor_assets"
 
               belongs_to :assetable, :polymorphic => true
+              belongs_to :user,      :dependent   => :destroy
 
               attr_accessible :data, :assetable_type, :assetable_id, :assetable
             end
