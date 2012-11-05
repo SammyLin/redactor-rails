@@ -1,4 +1,11 @@
-# Rails 3.2 Integration for Redactor
+# Rails 3.2 Integration for Redactor (Devise Edition)
+
+### NOTICE! Pictures and Documents stored with current_user.id
+### Warning! Currently Devise implementation works only with Active Record
+### CHANGES:
+  - user_id attribute added to assets model
+  - Pictures and Documents stored with current_user.id
+  - Pictures and Documents find by current_user.id attribute
 
 The redactor-rails gem integrates the [Redactor](http://redactorjs.com/) editor with the Rails 3.2 asset pipeline.
 
