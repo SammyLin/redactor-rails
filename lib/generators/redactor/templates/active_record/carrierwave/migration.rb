@@ -1,6 +1,7 @@
 class CreateRedactorAssets < ActiveRecord::Migration
   def self.up
     create_table :redactor_assets do |t|
+      t.integer :user_id
       t.string  :data_file_name, :null => false
       t.string  :data_content_type
       t.integer :data_file_size
@@ -16,6 +17,8 @@ class CreateRedactorAssets < ActiveRecord::Migration
       t.timestamps
     end
 
+    # Uncomment it to add foreign key. gem 'foreigner' is required in your .Gemfile
+    # add_foreign_key(:redactor_assets, :users, dependent: :delete)
     add_index "redactor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_redactor_assetable_type"
     add_index "redactor_assets", ["assetable_type", "assetable_id"], :name => "idx_redactor_assetable"
   end
