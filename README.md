@@ -1,12 +1,5 @@
 # Rails 3.2 Integration for Redactor (Devise Edition)
 
-### NOTICE! Pictures and Documents stored with current_user.id
-### Warning! Currently Devise implementation works only with Active Record
-### CHANGES:
-  - user_id attribute added to assets model
-  - Pictures and Documents stored with current_user.id
-  - Pictures and Documents find by current_user.id attribute
-
 The redactor-rails gem integrates the [Redactor](http://redactorjs.com/) editor with the Rails 3.2 asset pipeline.
 
 This gem bundles Redactor version 8.1.1 which is the most recent version as of October 18, 2012. Check [Redactor's changelog](http://imperavi.com/redactor/log/) for further updates.
@@ -33,6 +26,15 @@ Or install it yourself as:
     gem "mini_magick"
 
     $ rails generate redactor:install
+
+    or
+
+    $ rails generate redactor:install --devise
+
+    # --devise option generate user_id attribute for asset(Picture, Document) models. For more details show Devise gem.
+    # Now, Pictures and Documents uploading available only for signed in users
+    # All uploaded files will stored with current user_id
+    # User will choose only own uploaded Pictures and Documents
 
     $ rake db:migrate
 
