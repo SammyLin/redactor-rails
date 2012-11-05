@@ -3,10 +3,10 @@ require File.expand_path('../lib/redactor-rails/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Sammy", "Semjonow"]
-  gem.email         = ["sammylintw@gmail.com"]
+  gem.email         = ["sammylintw@gmail.com", "juri.semjonov@gmail.com"]
   gem.description   = "The redactor-rails gem for Devise integrates the Redactor editor"
   gem.summary       = ""
-  gem.homepage      = "git@github.com:Semjonow/devise-redactor-rails.git"
+  gem.homepage      = "https://github.com/Semjonow/redactor-rails"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -17,5 +17,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency("mime-types")
   gem.add_dependency("orm_adapter")
-
+  gem.add_dependency("devise")
 end
