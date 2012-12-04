@@ -1,4 +1,4 @@
-# Rails 3.2 Integration for Redactor
+# Rails 3.2 Integration for Redactor (Devise Edition)
 
 The redactor-rails gem integrates the [Redactor](http://redactorjs.com/) editor with the Rails 3.2 asset pipeline.
 
@@ -26,6 +26,15 @@ Or install it yourself as:
     gem "mini_magick"
 
     $ rails generate redactor:install
+
+    or
+
+    $ rails generate redactor:install --devise
+
+    # --devise option generate user_id attribute for asset(Picture, Document) models. For more details show Devise gem.
+    # Now, Pictures and Documents uploading available only for signed in users
+    # All uploaded files will stored with current user_id
+    # User will choose only own uploaded Pictures and Documents
 
     $ rake db:migrate
 
