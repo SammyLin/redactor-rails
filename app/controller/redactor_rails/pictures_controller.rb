@@ -3,7 +3,7 @@ class RedactorRails::PicturesController < ApplicationController
 
   def index
     @pictures = RedactorRails.picture_model.find_all(
-        RedactorRails.document_model.respond_to?(:user_id) ? { user_id: current_user.id } : { })
+        RedactorRails.picture_model.respond_to?(:user_id) ? { user_id: current_user.id } : { })
     render :json => @pictures.to_json
 
   end
