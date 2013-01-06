@@ -23,10 +23,10 @@ module RedactorRails
 
 
   def self.picture_model
-    RedactorRails::Picture.to_adapter
+    RedactorRails::Picture
   end
 
   def self.document_model
-    RedactorRails::Document.to_adapter
+    RedactorRails::Document
   end
 end
