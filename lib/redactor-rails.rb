@@ -27,6 +27,6 @@ module RedactorRails
   end
 
   def self.document_model
-    RedactorRails::Document.to_adapter
+    RedactorRails::Document
   end
 end

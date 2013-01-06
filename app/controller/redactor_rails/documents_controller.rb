@@ -1,9 +1,9 @@
 class RedactorRails::DocumentsController < ApplicationController
-  before_filter :authenticate_user! if RedactorRails.document_model.respond_to?(:user_id)
+  before_filter :authenticate_user! if RedactorRails.document_model.new.respond_to?(:user_id)
 
   def index
-    @documents = RedactorRails.document_model.find_all(
-        RedactorRails.document_model.respond_to?(:user_id) ? { user_id: current_user.id } : { })
+    @documents = RedactorRails.document_model.where(
+        RedactorRails.document_model.new.respond_to?(:user_id) ? { user_id: current_user.id } : { })
     render :json => @documents.to_json
   end
 
