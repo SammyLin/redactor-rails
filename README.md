@@ -2,7 +2,7 @@
 
 The redactor-rails gem integrates the [Redactor](http://redactorjs.com/) editor with the Rails 3.2 asset pipeline.
 
-This gem bundles Redactor version 8.1.1 which is the most recent version as of October 18, 2012. Check [Redactor's changelog](http://imperavi.com/redactor/log/) for further updates.
+This gem bundles Redactor version 8.2.2 which is the most recent version as of January 20, 2013. Check [Redactor's changelog](http://imperavi.com/redactor/log/) for further updates.
 
 ## Installation
 
@@ -67,7 +67,7 @@ If you need change some config in redactor, you can
 
     $ rails generate redactor:config
 
-Then generate `app\assets\redactor-rails\config.js`. 
+Then generate `app\assets\redactor-rails\config.js`.
 
 See the [Redactor Documentation](http://redactorjs.com/docs/settings/) for a full list of configuration options.
 
@@ -77,7 +77,7 @@ If You Want To setup a new language in Redactor you should do two things:
 In you file `app\assets\redactor-rails\config.js` set option
 
     "lang":'zh_tw'
-    
+
 and
 
 Add to your layout
