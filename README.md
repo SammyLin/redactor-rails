@@ -83,7 +83,64 @@ and
 Add to your layout
 
     <%= redactor_lang('zh_tw') %>
+    
+### Defining a Devise User Model
 
+By default redactor-rails uses the `User` model.
+
+You may use a different model by:
+
+1. Run a migration to update the user_id column in the 
+2. Overriding the user class in an initializer.
+3. Overriding the authentication helpers in your controller.
+
+    Create a new Migration: `rails g rename_user_id_to_new_user_id`
+    
+    ```
+    # db/migrate/...rename_user_id_to_new_user_id.rb
+    
+    class RenameUserIdToNewUserId < ActiveRecord::Migration
+      def up
+        rename_column :redactor_assets, :user_id, :admin_user_id
+      end
+    
+      def down
+        rename_column :redactor_assets, :admin_user_id, :user_id
+      end
+    end
+    ```
+
+    ```
+    # config/redactor.rb
+    # Overrides the user class
+    
+    module RedactorRails
+      def self.devise_user
+        %s(admin_user) # name of your user class
+      end
+      
+      # You may override this to support legacy schema.
+      # def self.devise_user_key
+      #   "#{self.devise_user.to_s}_id".to_sym
+      # end
+    end
+    ```
+    
+    ```
+    # app/controllers/application_controller.rb
+    
+    class ApplicationController < ActionController::Base
+      ...
+      
+      def redactor_authenticate_user!
+        authenticate_admin_user! # devise before_filter
+      end
+    
+      def redactor_current_user
+        current_admin_user # devise user helper
+      end
+    end
+    ```
 
 ## Contributing
 
