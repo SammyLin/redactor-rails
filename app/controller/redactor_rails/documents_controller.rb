@@ -8,7 +8,7 @@ class RedactorRails::DocumentsController < ApplicationController
   end
 
   def create
-    @document = RedactorRails::Document.new
+    @document = RedactorRails.document_model.new
 
     file = params[:file]
     @document.data = RedactorRails::Http.normalize_param(file, request)
