@@ -4,4 +4,8 @@ class RedactorRails::Document < RedactorRails::Asset
   def url_content
     url(:content)
   end
+
+  def as_json_methods
+    [:image]
+  end
 end
