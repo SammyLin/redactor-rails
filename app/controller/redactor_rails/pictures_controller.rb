@@ -8,7 +8,7 @@ class RedactorRails::PicturesController < ApplicationController
   end
 
   def create
-    @picture = RedactorRails::Picture.new
+    @picture = RedactorRails.picture_model.new
 
     file = params[:file]
     @picture.data = RedactorRails::Http.normalize_param(file, request)
