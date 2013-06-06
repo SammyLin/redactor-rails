@@ -63,5 +63,8 @@ RELANG['zh_cn'] = {
 	horizontalrule: '水平线',
 	fullscreen: '全屏',
 	deleted: '删除',
-	anchor: '锚点'
+	anchor: '锚点',
+	link_new_tab: '在新窗口打开',
+	underline: '下划线',
+	alignment: '对齐方式'
 };
