@@ -7,6 +7,7 @@ module RedactorRails
   FILE_TYPES = ['application/msword', 'application/pdf', 'text/plain', 'text/rtf', 'application/vnd.ms-excel']
 
   autoload :Http, 'redactor-rails/http'
+  autoload :Devise, 'redactor-rails/devise'
 
   module Backend
     autoload :CarrierWave, 'redactor-rails/backend/carrierwave'
@@ -28,5 +29,13 @@ module RedactorRails
 
   def self.document_model
     RedactorRails::Document
+  end
+
+  def self.devise_user
+    %s(user)
+  end
+
+  def self.devise_user_key
+    "#{self.devise_user.to_s}_id".to_sym
   end
 end

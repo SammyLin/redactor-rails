@@ -15,7 +15,7 @@ module RedactorRails
               self.table_name = "redactor_assets"
 
               belongs_to :assetable, :polymorphic => true
-              belongs_to :user,      :dependent   => :destroy
+              belongs_to RedactorRails.devise_user, :dependent => :destroy, :foreign_key => RedactorRails.devise_user_key
 
               attr_accessible :data, :assetable_type, :assetable_id, :assetable
             end
