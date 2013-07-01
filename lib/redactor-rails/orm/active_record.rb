@@ -17,7 +17,11 @@ module RedactorRails
               belongs_to :assetable, :polymorphic => true
               belongs_to RedactorRails.devise_user, :dependent => :destroy, :foreign_key => RedactorRails.devise_user_key
 
-              attr_accessible :data, :assetable_type, :assetable_id, :assetable
+              if defined?(ActiveModel::ForbiddenAttributesProtection) && base.ancestors.include?(ActiveModel::ForbiddenAttributesProtection)
+                # Ok
+              elsif defined?(ActiveModel::MassAssignmentSecurity) && base.ancestors.include?(ActiveModel::MassAssignmentSecurity)
+                attr_accessible :data, :assetable_type, :assetable_id, :assetable
+              end
             end
           end
         end
