@@ -1,11 +1,12 @@
-var RELANG = {};
-RELANG['ro'] = {
+(function ($) {
+$.Redactor.opts.langs['ro'] = {
 	html: 'HTML',
 	video: 'Adauga video...',
 	image: 'Adauga imagine...',
 	table: 'Tabel',
 	link: 'Legatura web',
 	link_insert: 'Adauga legatura web...',
+	link_edit: 'Edit link',
 	unlink: 'Elimina legatura web',
 	formatting: 'Formatare',
 	paragraph: 'Paragraf',
@@ -62,5 +63,11 @@ RELANG['ro'] = {
 	horizontalrule: 'Adauga rigla orizontala',
 	fullscreen: 'Afisare pe tot ecranul',
 	deleted: 'Taiat (Sters)',
-	anchor: 'Ancora'
+	anchor: 'Ancora',
+	link_new_tab: 'Open link in new tab',
+	underline: 'Underline',
+	alignment: 'Alignment',
+	filename: 'Name (optional)',
+	edit: 'Edit'
 };
+})( jQuery );

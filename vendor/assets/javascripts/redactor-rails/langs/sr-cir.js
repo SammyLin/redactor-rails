@@ -1,11 +1,12 @@
-var RELANG = {};
-RELANG['sr-cir'] = {
+(function ($) {
+$.Redactor.opts.langs['sr-cir'] = {
 	html: 'ХТМЛ',
 	video: 'Убаци видео',
 	image: 'Убаци фотографију',
 	table: 'Табела',
 	link: 'Веза',
 	link_insert: 'Убаци везу ...',
+	link_edit: 'Edit link',
 	unlink: 'Уклони везу',
 	formatting: 'Стилови',
 	paragraph: 'Параграф',
@@ -20,7 +21,7 @@ RELANG['sr-cir'] = {
 	fontcolor: 'Боја слова',
 	backcolor: 'Боја позадине',
 	unorderedlist: 'Несортирана листа',
-	orderedlist: 'Сортирана листа',	
+	orderedlist: 'Сортирана листа',
 	outdent: 'Извуци',
 	indent: 'Увуци',
 	redo: 'Корак напред',
@@ -65,5 +66,11 @@ RELANG['sr-cir'] = {
 	horizontalrule: 'Убаци хоризонталну линију',
 	fullscreen: 'Прикажи преко читавог екрана',
 	deleted: 'Избрисано',
-	anchor: 'Сидро'
+	anchor: 'Сидро',
+	link_new_tab: 'Open link in new tab',
+	underline: 'Underline',
+	alignment: 'Alignment',
+	filename: 'Name (optional)',
+	edit: 'Edit'
 };
+})( jQuery );
