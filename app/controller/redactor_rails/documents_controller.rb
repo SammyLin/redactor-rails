@@ -1,5 +1,5 @@
 class RedactorRails::DocumentsController < ApplicationController
-  before_filter :redactor_authenticate_user! if RedactorRails.document_model.new.respond_to?(RedactorRails.devise_user)
+  before_filter :redactor_authenticate_user!
 
   def index
     @documents = RedactorRails.document_model.where(
@@ -21,6 +21,14 @@ class RedactorRails::DocumentsController < ApplicationController
       render :text => { :filelink => @document.url, :filename => @document.filename }.to_json
     else
       render :nothing => true
+    end
+  end
+
+  private
+
+  def redactor_authenticate_user!
+    if RedactorRails.document_model.new.respond_to?(RedactorRails.devise_user)
+      super
     end
   end
 end
