@@ -1,5 +1,5 @@
 class RedactorRails::PicturesController < ApplicationController
-  before_filter :redactor_authenticate_user! if RedactorRails.picture_model.new.respond_to?(RedactorRails.devise_user)
+  before_filter :redactor_authenticate_user!
 
   def index
     @pictures = RedactorRails.picture_model.where(
@@ -21,6 +21,14 @@ class RedactorRails::PicturesController < ApplicationController
       render :text => { :filelink => @picture.url }.to_json
     else
       render :nothing => true
+    end
+  end
+
+  private
+
+  def redactor_authenticate_user!
+    if RedactorRails.picture_model.new.respond_to?(RedactorRails.devise_user)
+      super
     end
   end
 end
