@@ -1,2 +1,2 @@
-//= require ./redactor.min
+//= require ./redactor
 //= require ./config
