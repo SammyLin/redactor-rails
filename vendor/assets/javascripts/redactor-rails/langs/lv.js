@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['lv'] = {
+(function ($) {
+$.Redactor.opts.langs['lv'] = {
 	html: 'HTML кods',
 	video: 'Video',
 	image: 'Attēls',
@@ -63,3 +63,4 @@ RELANG['lv'] = {
 	fullscreen: 'Pa visu ekrānu',
     anchor: 'Anchor'	
 };
+})( jQuery );

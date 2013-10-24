@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['ko'] = {
+(function ($) {
+$.Redactor.opts.langs['ko'] = {
 	html: 'HTML',
 	video: '비디오',
 	image: '이미지',
@@ -64,3 +64,4 @@ RELANG['ko'] = {
 	deleted: '취소선',
 	anchor: '링크'
 };
+})( jQuery );

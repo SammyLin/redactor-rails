@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['id'] = {
+(function ($) {
+$.Redactor.opts.langs['id'] = {
     html: 'HTML',
     video: 'Sisipkan Video...',
     image: 'Sisipkan Gambar...',
@@ -64,3 +64,4 @@ RELANG['id'] = {
     deleted: 'Coret',
     anchor: 'Jangkar'
 };
+})( jQuery );

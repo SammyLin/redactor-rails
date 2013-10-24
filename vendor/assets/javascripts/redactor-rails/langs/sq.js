@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['sq'] = {
+(function ($) {
+$.Redactor.opts.langs['sq'] = {
 	html: 'HTML',
 	video: 'Video',
 	image: 'Fotografi',
@@ -67,3 +67,4 @@ RELANG['sq'] = {
 	deleted: 'E fshir&euml;',
 	anchor: 'Anchor'
 };
+})( jQuery );

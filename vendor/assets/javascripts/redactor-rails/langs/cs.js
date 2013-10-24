@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['cs'] = {
+(function ($) {
+$.Redactor.opts.langs['cs'] = {
 	html: 'HTML',
 	video: 'Video',
 	image: 'Obrázek',
@@ -75,3 +75,4 @@ RELANG['cs'] = {
 	none: 'Žádná',
 	anchor: 'Záložka'
 };
+})( jQuery );

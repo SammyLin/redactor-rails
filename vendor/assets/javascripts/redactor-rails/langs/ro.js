@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['ro'] = {
+(function ($) {
+$.Redactor.opts.langs['ro'] = {
 	html: 'HTML',
 	video: 'Adauga video...',
 	image: 'Adauga imagine...',
@@ -64,3 +64,4 @@ RELANG['ro'] = {
 	deleted: 'Taiat (Sters)',
 	anchor: 'Ancora'
 };
+})( jQuery );

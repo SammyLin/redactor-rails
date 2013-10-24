@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['fa'] = {
+(function ($) {
+$.Redactor.opts.langs['fa'] = {
 	html: 'اچ تی ام ال',
 	video: 'درج ویدیو...',
 	image: 'درج تصویر',
@@ -64,3 +64,4 @@ RELANG['fa'] = {
 	deleted: 'حذف شده',
 	anchor: 'قلاب'
 };
+})( jQuery );

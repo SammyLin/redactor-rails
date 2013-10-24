@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['ba'] = {
+(function ($) {
+$.Redactor.opts.langs['ba'] = {
 	html: 'HTML',
 	video: 'Ubaci video',
 	image: 'Ubaci fotografiju',
@@ -67,3 +67,4 @@ RELANG['ba'] = {
 	deleted: 'Izbrisano',
 	anchor: 'Sidro'
 };
+})( jQuery );

@@ -80,10 +80,19 @@ In you file `app\assets\redactor-rails\config.js` set option
 
 and
 
+if redactor-rails gem version <= 0.3.7
+
 Add to your layout
 
+
     <%= redactor_lang('zh_tw') %>
-    
+
+elsif redactor-rails gem version >= 0.4
+
+Add to your `application.js`:
+
+    //= require redactor-rails/langs/zh_tw
+
 ### Defining a Devise User Model
 
 By default redactor-rails uses the `User` model.

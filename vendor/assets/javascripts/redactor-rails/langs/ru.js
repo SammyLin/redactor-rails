@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['ru'] = {
+(function ($) {
+$.Redactor.opts.langs['ru'] = {
 	html: 'Код',
 	video: 'Видео',
 	image: 'Изображение',
@@ -64,3 +64,4 @@ RELANG['ru'] = {
 	deleted: 'Зачеркнутый',
 	anchor: 'Якорь'									
 };
+})( jQuery );

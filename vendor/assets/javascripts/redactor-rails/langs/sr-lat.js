@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['sr-lat'] = {
+(function ($) {
+$.Redactor.opts.langs['sr-lat'] = {
 	html: 'HTML',
 	video: 'Ubaci video',
 	image: 'Ubaci fotografiju',
@@ -67,3 +67,4 @@ RELANG['sr-lat'] = {
 	deleted: 'Izbrisano',
 	anchor: 'Sidro'
 };
+})( jQuery );

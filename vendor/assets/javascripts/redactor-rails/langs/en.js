@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['en'] = {
+(function ($) {
+$.Redactor.opts.langs['en'] = {
 	html: 'HTML',
 	video: 'Insert Video...',
 	image: 'Insert Image...',
@@ -64,3 +64,4 @@ RELANG['en'] = {
 	deleted: 'Deleted',
 	anchor: 'Anchor'
 };
+})( jQuery );

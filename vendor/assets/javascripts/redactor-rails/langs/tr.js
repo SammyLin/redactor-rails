@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['tr'] = {
+(function ($) {
+$.Redactor.opts.langs['tr'] = {
 	html: 'HTML',
 	video: 'Video',
 	image: 'Görsel',
@@ -64,3 +64,4 @@ RELANG['tr'] = {
 	deleted: 'Silindi',
 	anchor: 'Çapa'
 };
+})( jQuery );

@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['ar'] = {
+(function ($) {
+$.Redactor.opts.langs['ar'] = {
 	html: 'كود HTML',
 	video: 'فيديو',
 	image: 'صورة',
@@ -64,3 +64,4 @@ RELANG['ar'] = {
 	deleted: 'خط في الوسط',
 	anchor: 'مرساة'
 };
+})( jQuery );

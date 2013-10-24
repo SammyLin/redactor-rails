@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['hu'] = {
+(function ($) {
+$.Redactor.opts.langs['hu'] = {
 	html: 'HTML',
 	video: 'Videó',
 	image: 'Kép',
@@ -65,3 +65,4 @@ RELANG['hu'] = {
 	deleted: 'Törölt',
 	anchor: 'Horgony'
 };
+})( jQuery );

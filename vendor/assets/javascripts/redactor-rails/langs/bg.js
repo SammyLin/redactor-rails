@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['bg'] = {
+(function ($) {
+$.Redactor.opts.langs['bg'] = {
 	html: 'HTML',
 	video: 'Видео',
 	image: 'Изображение',
@@ -65,3 +65,4 @@ RELANG['bg'] = {
 	none: 'Няма',
 	anchor: 'Връзка'
 };
+})( jQuery );

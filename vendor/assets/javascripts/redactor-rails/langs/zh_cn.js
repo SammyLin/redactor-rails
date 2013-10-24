@@ -1,6 +1,6 @@
 //@chen1706@gmail.com
-var RELANG = {};
-RELANG['zh_cn'] = {
+(function ($) {
+$.Redactor.opts.langs['zh_cn'] = {
 	html: 'HTML代码',
 	video: '视频',
 	image: '图片',
@@ -68,3 +68,4 @@ RELANG['zh_cn'] = {
 	underline: '下划线',
 	alignment: '对齐方式'
 };
+})( jQuery );

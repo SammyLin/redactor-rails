@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['fi'] = {
+(function ($) {
+$.Redactor.opts.langs['fi'] = {
 	html: 'HTML',
 	video: 'Video',
 	image: 'Kuva',
@@ -67,3 +67,4 @@ RELANG['fi'] = {
 	deleted: 'Poistettu',
 	anchor: 'Ankkuri'
 };
+})( jQuery );

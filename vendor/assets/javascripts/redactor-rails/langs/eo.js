@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['eo'] = {
+(function ($) {
+$.Redactor.opts.langs['eo'] = {
 	html: 'HTML', // substantive
 	video: 'Enŝovu Videon...', // imperative
 	image: 'Enŝovu Bildon...', // imperative
@@ -64,3 +64,4 @@ RELANG['eo'] = {
 	deleted: 'Foriga', // adjective
 	anchor: 'Ankro' // substantive
 };
+})( jQuery );

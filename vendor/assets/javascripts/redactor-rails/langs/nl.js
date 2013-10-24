@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['nl'] = {
+(function ($) {
+$.Redactor.opts.langs['nl'] = {
 	html: 'HTML',
 	video: 'Video',
 	image: 'Afbeelding',
@@ -67,3 +67,4 @@ RELANG['nl'] = {
 	deleted: 'Verwijderd',
 	anchor: 'Anker'
 };
+})( jQuery );

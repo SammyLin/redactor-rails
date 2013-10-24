@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['ja'] = {
+(function ($) {
+$.Redactor.opts.langs['ja'] = {
 	html: 'HTML',
 	video: 'ビデオ',
 	image: 'イメージ',
@@ -64,3 +64,4 @@ RELANG['ja'] = {
 	deleted: '打消し',
 	anchor: 'アンカー'
 };
+})( jQuery );

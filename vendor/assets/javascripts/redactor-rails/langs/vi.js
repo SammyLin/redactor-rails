@@ -1,5 +1,5 @@
-﻿var RELANG = {};
-RELANG['vi'] = {
+(function ($) {
+$.Redactor.opts.langs['vi'] = {
 	html: 'Xem HTML',
 	video: 'Chèn Video...',
 	image: 'Chèn hình ảnh...',
@@ -63,3 +63,4 @@ RELANG['vi'] = {
 	deleted: 'Xóa',
 	anchor: 'Liên kết'
 };
+})( jQuery );

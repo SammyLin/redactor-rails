@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['sr-cir'] = {
+(function ($) {
+$.Redactor.opts.langs['sr-cir'] = {
 	html: 'ХТМЛ',
 	video: 'Убаци видео',
 	image: 'Убаци фотографију',
@@ -67,3 +67,4 @@ RELANG['sr-cir'] = {
 	deleted: 'Избрисано',
 	anchor: 'Сидро'
 };
+})( jQuery );

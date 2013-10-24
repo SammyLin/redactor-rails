@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['sk'] = {
+(function ($) {
+$.Redactor.opts.langs['sk'] = {
 	html: 'HTML',
 	video: 'Video',
 	image: 'Obrázok',
@@ -64,3 +64,4 @@ RELANG['sk'] = {
 	deleted: 'Prečiarknuté',
 	anchor: 'Záložka'
 };
+})( jQuery );

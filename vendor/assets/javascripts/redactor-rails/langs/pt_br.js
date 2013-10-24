@@ -1,5 +1,5 @@
-var RELANG = {};
-RELANG['pt_br'] = {
+(function ($) {
+$.Redactor.opts.langs['pt_br'] = {
 	html: 'Ver HTML',
 	video: 'V&iacute;deo',
 	image: 'Imagem',
@@ -70,3 +70,4 @@ RELANG['pt_br'] = {
 	deleted: 'Removido',
         anchor: 'Âncora'							
 };
+})( jQuery );
