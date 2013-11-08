@@ -70,7 +70,7 @@ If you need change some config in redactor, you can
 
 Then generate `app\assets\redactor-rails\config.js`.
 
-See the [Redactor Documentation](http://redactorjs.com/docs/settings/) for a full list of configuration options.
+See the [Redactor Documentation](http://imperavi.com/redactor/docs/settings/) for a full list of configuration options.
 
 
 If You Want To setup a new language in Redactor you should do two things:
