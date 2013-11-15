@@ -121,7 +121,7 @@ You may use a different model by:
     ```
 
     ```
-    # config/redactor.rb
+    # config/initializers/redactor.rb
     # Overrides the user class
     
     module RedactorRails
