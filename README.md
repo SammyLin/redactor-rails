@@ -94,6 +94,37 @@ Add to your `application.js`:
 
     //= require redactor-rails/langs/zh_tw
 
+### Using plugins
+
+This gem comes bundled with several Redactor plugins:
+
+- Fullscreen
+- Clips
+- FontColor
+- FontSize
+- FontFamily
+- Text direction
+ 
+Full details of these can be found at [Redactor Plugins](http://imperavi.com/redactor/docs/plugins/)
+
+To include all the plugins just add to your `application.js`:
+      
+        //= require redactor-rails/plugins
+
+and add to your `application.css`:
+
+        *= redactor-rails/plugins
+
+If you would prefer to pick and choose which plugins to include you can
+add for example:
+
+      //= require redactor-rails/plugins/fontsize
+      //= require redactor-rails/plugins/fontfamily
+
+After including the desired plugins they can be configured in the
+redactor config file as normal.
+
+
 ### Defining a Devise User Model
 
 By default redactor-rails uses the `User` model.
