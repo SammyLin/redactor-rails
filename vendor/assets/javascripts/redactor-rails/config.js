@@ -1,5 +1,4 @@
-$(document).ready(
-  function(){
+window.init_redactor = function(){
   var csrf_token = $('meta[name=csrf-token]').attr('content');
   var csrf_param = $('meta[name=csrf-param]').attr('content');
   var params;
@@ -12,4 +11,7 @@ $(document).ready(
       "path":"/assets/redactor-rails",
       "css":"style.css"}
   );
-});
+}
+
+$(document).ready( window.init_redactor );
+$(window).bind('page:change', window.init_redactor);
