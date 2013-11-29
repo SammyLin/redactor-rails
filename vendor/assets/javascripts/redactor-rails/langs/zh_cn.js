@@ -17,7 +17,7 @@ $.Redactor.opts.langs['zh_cn'] = {
 	header2: '二级标题',
 	header3: '三级标题',
 	header4: '四级标题',
-	header5: '五级标题'
+	header5: '五级标题',
 	bold:  '粗体',
 	italic: '斜体',
 	fontcolor: '字体颜色',
