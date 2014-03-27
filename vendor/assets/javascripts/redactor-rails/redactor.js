@@ -2636,7 +2636,7 @@
 
 				this.selectionRestore();
 			}
-
+      this.sync();
 		},
 		insideOutdent: function (li, index, elems)
 		{
