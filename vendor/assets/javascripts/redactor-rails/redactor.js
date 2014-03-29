@@ -104,6 +104,7 @@
 
 			autosave: false, // false or url
 			autosaveInterval: 60, // seconds
+            autosaveFormdata: true,
 
 			plugins: false, // array
 
@@ -1744,6 +1745,15 @@
 		autosave: function()
 		{
 			var savedHtml = false;
+            var html = this.get();
+            var submitData = "";
+            if(this.opts.autosaveFormdata == true)
+            {
+                submitData = this.$source.closest('form').serialize();
+            }
+            else{
+                submitData = this.$source.attr('name') + '=' + escape(encodeURIComponent(html)),
+            }
 			this.autosaveInterval = setInterval($.proxy(function()
 			{
 				var html = this.get();
@@ -1752,7 +1762,7 @@
 					$.ajax({
 						url: this.opts.autosave,
 						type: 'post',
-						data: this.$source.attr('name') + '=' + escape(encodeURIComponent(html)),
+						data: submitData,
 						success: $.proxy(function(data)
 						{
 							this.callback('autosave', false, data);
