@@ -1756,7 +1756,6 @@
             }
 			this.autosaveInterval = setInterval($.proxy(function()
 			{
-				var html = this.get();
 				if (savedHtml !== html)
 				{
 					$.ajax({
