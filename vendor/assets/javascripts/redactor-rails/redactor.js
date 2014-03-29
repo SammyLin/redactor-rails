@@ -1752,7 +1752,7 @@
                 submitData = this.$source.closest('form').serialize();
             }
             else{
-                submitData = this.$source.attr('name') + '=' + escape(encodeURIComponent(html)),
+                submitData = this.$source.attr('name') + '=' + escape(encodeURIComponent(html));
             }
 			this.autosaveInterval = setInterval($.proxy(function()
 			{
