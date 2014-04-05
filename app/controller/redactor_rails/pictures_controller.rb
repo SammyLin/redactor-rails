@@ -1,5 +1,5 @@
 class RedactorRails::PicturesController < ApplicationController
-  before_filter :redactor_authenticate_user!
+  #before_filter :redactor_authenticate_user!
 
   def index
     @pictures = RedactorRails.picture_model.where(
