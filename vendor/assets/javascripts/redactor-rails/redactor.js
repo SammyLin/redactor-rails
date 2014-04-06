@@ -3673,13 +3673,13 @@
 
 			this.bufferSet();
 
-			var $html = $('<div>').append($.parseHTML(html));
+			var $html = $('<div>').append(html);
 			html = $html.html();
 
 			html = this.cleanRemoveEmptyTags(html);
 
 			// Update value
-			$html = $('<div>').append($.parseHTML(html));
+			$html = $('<div>').append(html);
 
 			var currBlock = this.getBlock();
 
@@ -3769,7 +3769,7 @@
 		},
 		insertText: function(html)
 		{
-			var $html = $($.parseHTML(html));
+			var $html = $(html);
 
 			if ($html.length) html = $html.text();
 
