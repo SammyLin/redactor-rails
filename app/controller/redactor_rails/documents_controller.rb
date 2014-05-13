@@ -20,7 +20,7 @@ class RedactorRails::DocumentsController < ApplicationController
     if @document.save
       render :text => { :filelink => @document.url, :filename => @document.filename }.to_json
     else
-      render :nothing => true
+      render json: { error: @document.errors }
     end
   end
 
