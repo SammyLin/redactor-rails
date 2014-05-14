@@ -12,7 +12,7 @@ class RedactorRails::DocumentsController < ApplicationController
 
     file = params[:file]
     @document.data = RedactorRails::Http.normalize_param(file, request)
-    if @document.respond_to?(RedactorRails.devise_user)
+    if @document.has_attribute?(:"#{RedactorRails.devise_user_key}")
       @document.send("#{RedactorRails.devise_user}=", redactor_current_user)
       @document.assetable = redactor_current_user
     end
@@ -27,7 +27,7 @@ class RedactorRails::DocumentsController < ApplicationController
   private
 
   def redactor_authenticate_user!
-    if RedactorRails.document_model.new.respond_to?(RedactorRails.devise_user)
+    if RedactorRails.document_model.new.has_attribute?(RedactorRails.devise_user)
       super
     end
   end

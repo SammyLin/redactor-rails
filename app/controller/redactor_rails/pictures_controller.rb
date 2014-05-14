@@ -1,5 +1,5 @@
 class RedactorRails::PicturesController < ApplicationController
-  #before_filter :redactor_authenticate_user!
+  before_filter :redactor_authenticate_user!
 
   def index
     @pictures = RedactorRails.picture_model.where(
@@ -12,7 +12,7 @@ class RedactorRails::PicturesController < ApplicationController
 
     file = params[:file]
     @picture.data = RedactorRails::Http.normalize_param(file, request)
-    if @picture.respond_to?(RedactorRails.devise_user)
+    if @picture.has_attribute?(:"#{RedactorRails.devise_user_key}")
       @picture.send("#{RedactorRails.devise_user}=", redactor_current_user)
       @picture.assetable = redactor_current_user
     end
@@ -27,7 +27,7 @@ class RedactorRails::PicturesController < ApplicationController
   private
 
   def redactor_authenticate_user!
-    if RedactorRails.picture_model.new.respond_to?(RedactorRails.devise_user)
+    if RedactorRails.picture_model.new.has_attribute?(RedactorRails.devise_user)
       super
     end
   end
