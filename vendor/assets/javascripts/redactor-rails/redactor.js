@@ -104,6 +104,7 @@
 
 			autosave: false, // false or url
 			autosaveInterval: 60, // seconds
+            autosaveFormdata: true,
 
 			plugins: false, // array
 
@@ -1744,15 +1745,23 @@
 		autosave: function()
 		{
 			var savedHtml = false;
+            var html = this.get();
+            var submitData = "";
+            if(this.opts.autosaveFormdata == true)
+            {
+                submitData = this.$source.closest('form').serialize();
+            }
+            else{
+                submitData = this.$source.attr('name') + '=' + escape(encodeURIComponent(html));
+            }
 			this.autosaveInterval = setInterval($.proxy(function()
 			{
-				var html = this.get();
 				if (savedHtml !== html)
 				{
 					$.ajax({
 						url: this.opts.autosave,
 						type: 'post',
-						data: this.$source.attr('name') + '=' + escape(encodeURIComponent(html)),
+						data: submitData,
 						success: $.proxy(function(data)
 						{
 							this.callback('autosave', false, data);
@@ -3664,13 +3673,13 @@
 
 			this.bufferSet();
 
-			var $html = $('<div>').append($.parseHTML(html));
+			var $html = $('<div>').append(html);
 			html = $html.html();
 
 			html = this.cleanRemoveEmptyTags(html);
 
 			// Update value
-			$html = $('<div>').append($.parseHTML(html));
+			$html = $('<div>').append(html);
 
 			var currBlock = this.getBlock();
 
@@ -3760,7 +3769,7 @@
 		},
 		insertText: function(html)
 		{
-			var $html = $($.parseHTML(html));
+			var $html = $(html);
 
 			if ($html.length) html = $html.text();
 
