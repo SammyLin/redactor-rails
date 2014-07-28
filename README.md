@@ -94,6 +94,16 @@ Add to your `application.js`:
 
     //= require redactor-rails/langs/zh_tw
 
+#### Setting a max image size with carrierwave
+
+If you want to set a maximum image size used when a user uploads an image via carrierwave, open the uploader file and add add the following:
+
+    # app/uploaders/redactor_rails_picture_uploader.rb:33
+    
+    process :resize_to_limit => [500, -1]
+
+The above example will set the image to have a maximum width of 500px. 
+
 ### Using plugins
 
 This gem comes bundled with several Redactor plugins:
