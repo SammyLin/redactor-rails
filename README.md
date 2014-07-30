@@ -216,5 +216,5 @@ the `redactor-rails` project is MIT-LICENSE.
 
 You may use `Redactor` for non-commercial websites for free, however, we do not guarantee any technical support.
 
-Redactor has [3 different licenses](http://redactorjs.com/download/) for commercial use.
-For details please see [License Agreement](http://redactorjs.com/download/).
+Redactor has [3 different licenses](http://imperavi.com/redactor/download/) for commercial use.
+For details please see [License Agreement](http://imperavi.com/redactor/license/).
