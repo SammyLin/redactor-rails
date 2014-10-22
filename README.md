@@ -99,7 +99,7 @@ Add to your `application.js`:
 If you want to set a maximum image size used when a user uploads an image via carrierwave, open the uploader file and add add the following:
 
     # app/uploaders/redactor_rails_picture_uploader.rb:33
-    
+
     process :resize_to_limit => [500, -1]
 
 The above example will set the image to have a maximum width of 500px. 
@@ -114,11 +114,11 @@ This gem comes bundled with several Redactor plugins:
 - FontSize
 - FontFamily
 - Text direction
- 
-Full details of these can be found at [Redactor Plugins](http://imperavi.com/redactor/docs/plugins/)
+
+Full details of these can be found at [Redactor Plugins](http://imperavi.com/redactor/plugins/)
 
 To include all the plugins just add to your `application.js`:
-      
+
         //= require redactor-rails/plugins
 
 and add to your `application.css`:
@@ -146,15 +146,15 @@ You may use a different model by:
 3. Overriding the authentication helpers in your controller.
 
     Create a new Migration: `rails g rename_user_id_to_new_user_id`
-    
+
     ```
     # db/migrate/...rename_user_id_to_new_user_id.rb
-    
+
     class RenameUserIdToNewUserId < ActiveRecord::Migration
       def up
         rename_column :redactor_assets, :user_id, :admin_user_id
       end
-    
+
       def down
         rename_column :redactor_assets, :admin_user_id, :user_id
       end
@@ -164,29 +164,29 @@ You may use a different model by:
     ```
     # config/initializers/redactor.rb
     # Overrides the user class
-    
+
     module RedactorRails
       def self.devise_user
         %s(admin_user) # name of your user class
       end
-      
+
       # You may override this to support legacy schema.
       # def self.devise_user_key
       #   "#{self.devise_user.to_s}_id".to_sym
       # end
     end
     ```
-    
+
     ```
     # app/controllers/application_controller.rb
-    
+
     class ApplicationController < ActionController::Base
       ...
-      
+
       def redactor_authenticate_user!
         authenticate_admin_user! # devise before_filter
       end
-    
+
       def redactor_current_user
         current_admin_user # devise user helper
       end
