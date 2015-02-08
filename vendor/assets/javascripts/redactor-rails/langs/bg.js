@@ -6,6 +6,7 @@ $.Redactor.opts.langs['bg'] = {
 	table: 'Таблица',
 	link: 'Връзка',
 	link_insert: 'Вкарай връзка ...',
+	link_edit: 'Edit link',
 	unlink: 'Премахни връзка',
 	formatting: 'Стилове',
 	paragraph: 'Параграф',
@@ -63,6 +64,11 @@ $.Redactor.opts.langs['bg'] = {
 	fullscreen: 'Цял екран',
 	deleted: 'Зачеркни',
 	none: 'Няма',
-	anchor: 'Връзка'
+	anchor: 'Котва',
+	link_new_tab: 'Отваряне в нов таб',
+	underline: 'Подчертай',
+	alignment: 'Подравняване',
+	filename: 'Name (optional)',
+	edit: 'Edit'
 };
 })( jQuery );

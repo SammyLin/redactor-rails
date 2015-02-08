@@ -6,6 +6,7 @@ $.Redactor.opts.langs['by'] = {
     table: 'Табліца',
     link: 'Спасылка',
     link_insert: 'Уставіць спасылку ...',
+    link_edit: 'Edit link',
     unlink: 'Выдаліць спасылку',
     formatting: 'Стылі',
     paragraph: 'Звычайны тэкст',
@@ -61,6 +62,11 @@ $.Redactor.opts.langs['by'] = {
     horizontalrule: 'Гарызантальная лінейка',
     fullscreen: 'Ва ўвесь экран',
     deleted: 'Закрэслены',
-    anchor: 'Anchor'
+    anchor: 'Anchor',
+	link_new_tab: 'Open link in new tab',
+	underline: 'Underline',
+	alignment: 'Alignment',
+	filename: 'Name (optional)',
+	edit: 'Edit'
 };
 })( jQuery );
