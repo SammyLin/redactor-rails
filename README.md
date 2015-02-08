@@ -121,7 +121,7 @@ This gem comes bundled with several Redactor plugins:
 - FontFamily
 - Text direction
 
-Full details of these can be found at [Redactor Plugins](http://imperavi.com/redactor/docs/plugins/)
+Full details of these can be found at [Redactor Plugins](http://imperavi.com/redactor/plugins/)
 
 To include all the plugins just add to your `application.js`:
 
