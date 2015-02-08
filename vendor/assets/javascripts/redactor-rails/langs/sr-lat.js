@@ -6,6 +6,7 @@ $.Redactor.opts.langs['sr-lat'] = {
 	table: 'Tabela',
 	link: 'Veza',
 	link_insert: 'Ubaci vezu ...',
+	link_edit: 'Edit link',
 	unlink: 'Ukloni vezu',
 	formatting: 'Stilovi',
 	paragraph: 'Paragraf',
@@ -20,7 +21,7 @@ $.Redactor.opts.langs['sr-lat'] = {
 	fontcolor: 'Boja slova',
 	backcolor: 'Boja pozadine',
 	unorderedlist: 'Nesortirana lista',
-	orderedlist: 'Sortirana lista',	
+	orderedlist: 'Sortirana lista',
 	outdent: 'Izvuci',
 	indent: 'Uvuci',
 	redo: 'Korak napred',
@@ -65,6 +66,11 @@ $.Redactor.opts.langs['sr-lat'] = {
 	horizontalrule: 'Ubaci horizontalnu liniju',
 	fullscreen: 'Prikaz preko čitavog ekrana',
 	deleted: 'Izbrisano',
-	anchor: 'Sidro'
+	anchor: 'Sidro',
+	link_new_tab: 'Open link in new tab',
+	underline: 'Underline',
+	alignment: 'Alignment',
+	filename: 'Name (optional)',
+	edit: 'Edit'
 };
 })( jQuery );
