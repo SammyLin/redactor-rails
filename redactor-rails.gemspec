@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require_relative File.expand_path('../lib/redactor-rails/version', __FILE__)
+require File.expand_path('../lib/redactor-rails/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Sammy"]
