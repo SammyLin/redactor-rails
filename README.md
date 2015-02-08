@@ -56,11 +56,11 @@ Or install it yourself as:
 
 Add to your `application.js`:
 
-      //= require redactor-rails
+      //= require redactor-rails/redactor
 
 Add to your `application.css`:
 
-      *= require redactor-rails
+      *= require redactor-rails/css/redactor
 
 ### Initialize Redactor
 
