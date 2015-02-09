@@ -207,9 +207,14 @@ You may use a different model by:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+## Contributors
+
+[Sebastian Wilgosz](https://github.com/wilgoszpl)
+
 ## Special Thanks
 
 [wildjcrt (Jerry Lee)](https://github.com/wildjcrt/)
+
 ## Statement
 
 `redactor-rails` part of reference [galetahub/ckeditor](https://github.com/galetahub/ckeditor) project.
