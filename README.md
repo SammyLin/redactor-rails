@@ -5,12 +5,6 @@ The redactor-rails gem integrates the [Redactor](http://redactorjs.com/) editor 
 
 This gem bundles Redactor version 10.0.4 which is the most recent version as of January 9, 2015. Check [Redactor's changelog](http://imperavi.com/redactor/log/) for further updates.
 
-## Ruby version
-
-We're currently working on updating to Rails 4.x with newest Ruby version. Until next release, this version dosen't work with Ruby > 2.0.0 .
-
-Ensure you have Ruby version < 2.0.0 installed
-
 ## Installation
 
 Add this line to your application's Gemfile:
