@@ -13,5 +13,4 @@ window.init_redactor = function(){
   );
 }
 
-$(document).ready( window.init_redactor );
-$(window).bind('page:change', window.init_redactor);
+$(document).on( 'ready page:load', window.init_redactor );
