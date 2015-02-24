@@ -131,9 +131,18 @@ add for example:
       //= require redactor-rails/plugins/fontsize
       //= require redactor-rails/plugins/fontfamily
 
-After including the desired plugins they can be configured in the
-redactor config file as normal.
+After including the desired plugins they can be configured in the redactor config file as normal.
 
+To add it into the editor just add 'plugins' attributes to config.js file and specify which ones do you want to use:
+
+      $('.redactor').redactor(
+        { "plugins": ['fontsize',
+                    'fontcolor',
+                    'fontfamily',
+                    'fullscreen',
+                    'textdirection',
+                    'clips']
+        });
 
 ### Defining a Devise User Model
 
