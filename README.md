@@ -70,6 +70,14 @@ If you need change some config in redactor, you can
 
 Then generate `app\assets\redactor-rails\config.js`.
 
+Change your `application.js`:
+
+      //= require redactor-rails
+
+to
+
+      //= require redactor-rails/config
+
 See the [Redactor Documentation](http://imperavi.com/redactor/docs/settings/) for a full list of configuration options.
 
 
