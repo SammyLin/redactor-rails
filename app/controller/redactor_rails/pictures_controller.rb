@@ -18,7 +18,7 @@ class RedactorRails::PicturesController < ApplicationController
     end
 
     if @picture.save
-      render json: { filelink: @picture.url }
+      render json: { filelink: @picture.url(:content) }
     else
       render json: { error: @picture.errors }
     end
