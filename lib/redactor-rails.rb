@@ -38,4 +38,8 @@ module RedactorRails
   def self.devise_user_key
     "#{self.devise_user.to_s}_id".to_sym
   end
+
+  def self.devise_user_class_name
+    "User"
+  end
 end
