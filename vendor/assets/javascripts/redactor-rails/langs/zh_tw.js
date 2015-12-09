@@ -1,3 +1,4 @@
+
 (function ($) {
 $.Redactor.opts.langs['zh_tw'] = {
 	html: 'HTML',
