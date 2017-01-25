@@ -1,4 +1,7 @@
 
+# This repo is deprecated
+## Please check out official gem for Redactor 2. https://github.com/Redactor2/redactor2_rails
+
 # Rails 3.2 Integration for Redactor (Devise Edition)
 
 The redactor-rails gem integrates the [Redactor](http://redactorjs.com/) editor with the Rails 3.2 asset pipeline.
