@@ -1476,7 +1476,7 @@
 			return {
 				build: function(btnName, btnObject)
 				{
-					var $button = $('<a href="#" class="re-icon re-' + btnName + '" rel="' + btnName + '" />').attr('tabindex', '-1');
+					var $button = $('<a href="" class="re-icon re-' + btnName + '" rel="' + btnName + '" />').attr('tabindex', '-1');
 
 					// click
 					if (btnObject.func || btnObject.command || btnObject.dropdown)
