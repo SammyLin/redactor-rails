@@ -16,6 +16,7 @@ $.Redactor.opts.langs['hu'] = {
 	header2: 'Címsor 2',
 	header3: 'Címsor 3',
 	header4: 'Címsor 4',
+	header5: 'Címsor 5',
 	bold:  'Félkövér',
 	italic: 'Dőlt',
 	fontcolor: 'Szöveg szine',
@@ -69,6 +70,8 @@ $.Redactor.opts.langs['hu'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

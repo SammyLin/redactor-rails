@@ -16,6 +16,7 @@ $.Redactor.opts.langs['nl'] = {
 	header2: 'Kop 2',
 	header3: 'Kop 3',
 	header4: 'Kop 4',
+	header5: 'Kop 5',
 	bold:  'Vet',
 	italic: 'Cursief',
 	fontcolor: 'Tekstkleur',
@@ -67,10 +68,13 @@ $.Redactor.opts.langs['nl'] = {
 	fullscreen: 'Volledig scherm',
 	deleted: 'Verwijderd',
 	anchor: 'Anker',
-	link_new_tab: 'Open link in new tab',
-	underline: 'Underline',
-	alignment: 'Alignment',
-	filename: 'Name (optional)',
-	edit: 'Edit'
+	link_new_tab: 'Open link in nieuw tabblad',
+	underline: 'Onderstrepen',
+	alignment: 'Uitlijning',
+	filename: 'Naam (optioneel)',
+	edit: 'Bewerk',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );
+

@@ -16,6 +16,7 @@ $.Redactor.opts.langs['lt'] = {
 	header2: 'Antraštė 2',
 	header3: 'Antraštė 3',
 	header4: 'Antraštė 4',
+	header5: 'Antraštė 5',
 	bold:  'Ryškus',
 	italic: 'Pasviras',
 	fontcolor: 'Teksto spalva',
@@ -67,6 +68,8 @@ $.Redactor.opts.langs['lt'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

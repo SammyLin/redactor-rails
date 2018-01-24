@@ -16,6 +16,7 @@ $.Redactor.opts.langs['fi'] = {
 	header2: 'Otsikko 2',
 	header3: 'Otsikko 3',
 	header4: 'Otsikko 4',
+	header5: 'Otsikko 5',
 	bold:  'Lihavointi',
 	italic: 'Kursivointi',
 	fontcolor: 'Tekstin väri',
@@ -67,6 +68,8 @@ $.Redactor.opts.langs['fi'] = {
 	underline: 'Alleviivaa',
 	alignment: 'Tasaus',
 	filename: 'Nimi (valinnainen)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

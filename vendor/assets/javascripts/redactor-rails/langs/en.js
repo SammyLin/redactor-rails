@@ -1,11 +1,11 @@
 (function ($) {
 $.Redactor.opts.langs['en'] = {
 	html: 'HTML',
-	video: 'Insert Video...',
-	image: 'Insert Image...',
+	video: 'Insert Video',
+	image: 'Insert Image',
 	table: 'Table',
 	link: 'Link',
-	link_insert: 'Insert Link ...',
+	link_insert: 'Insert Link',
 	link_edit: 'Edit link',
 	unlink: 'Unlink',
 	formatting: 'Formatting',
@@ -16,6 +16,7 @@ $.Redactor.opts.langs['en'] = {
 	header2: 'Header 2',
 	header3: 'Header 3',
 	header4: 'Header 4',
+	header5: 'Header 5',
 	bold:  'Bold',
 	italic: 'Italic',
 	fontcolor: 'Font Color',
@@ -28,7 +29,7 @@ $.Redactor.opts.langs['en'] = {
 	insert: 'Insert',
 	save: 'Save',
 	_delete: 'Delete',
-	insert_table: 'Insert Table...',
+	insert_table: 'Insert Table',
 	insert_row_above: 'Add Row Above',
 	insert_row_below: 'Add Row Below',
 	insert_column_left: 'Add Column Left',
@@ -49,8 +50,8 @@ $.Redactor.opts.langs['en'] = {
 	text: 'Text',
 	mailto: 'Email',
 	web: 'URL',
-	video_html_code: 'Video Embed Code',
-	file: 'Insert File...',
+	video_html_code: 'Video Embed Code or Youtube/Vimeo Link',
+	file: 'Insert File',
 	upload: 'Upload',
 	download: 'Download',
 	choose: 'Choose',
@@ -67,6 +68,8 @@ $.Redactor.opts.langs['en'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

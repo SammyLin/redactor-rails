@@ -16,6 +16,7 @@ $.Redactor.opts.langs['vi'] = {
 	header2: 'Tiêu đề 2',
 	header3: 'Tiêu đề 3',
 	header4: 'Tiêu đề 4',
+	header5: 'Tiêu đề 5',
 	bold:  'In đậm',
 	italic: 'In nghiêng',
 	fontcolor: 'Màu chữ',
@@ -67,6 +68,7 @@ $.Redactor.opts.langs['vi'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center'
 };
 })( jQuery );

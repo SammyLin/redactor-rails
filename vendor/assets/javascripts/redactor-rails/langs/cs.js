@@ -16,6 +16,7 @@ $.Redactor.opts.langs['cs'] = {
 	header2: 'Nadpis 2',
 	header3: 'Nadpis 3',
 	header4: 'Nadpis 4',
+	header5: 'Nadpis 5',
 	format: 'Formát',
 	bold:  'Tučné',
 	italic: 'Kurzíva',
@@ -79,6 +80,8 @@ $.Redactor.opts.langs['cs'] = {
 	underline: 'Podtržené',
 	alignment: 'Zarovnání',
 	filename: 'Název (volitelné)',
-	edit: 'Upravit'
+	edit: 'Upravit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

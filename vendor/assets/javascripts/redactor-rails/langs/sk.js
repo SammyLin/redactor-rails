@@ -16,6 +16,7 @@ $.Redactor.opts.langs['sk'] = {
 	header2: 'Nadpis 2',
 	header3: 'Nadpis 3',
 	header4: 'Nadpis 4',
+	header5: 'Nadpis 5',
 	bold:  'Tučné',
 	italic: 'Kurzíva',
 	fontcolor: 'Farba písma',
@@ -68,6 +69,8 @@ $.Redactor.opts.langs['sk'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

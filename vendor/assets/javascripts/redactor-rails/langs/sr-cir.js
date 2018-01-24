@@ -16,6 +16,7 @@ $.Redactor.opts.langs['sr-cir'] = {
 	header2: 'Заглавље 2',
 	header3: 'Заглавље 3',
 	header4: 'Заглавље 4',
+	header5: 'Заглавље 5',
 	bold: 'Подебљај',
 	italic: 'Накоси',
 	fontcolor: 'Боја слова',
@@ -71,6 +72,8 @@ $.Redactor.opts.langs['sr-cir'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

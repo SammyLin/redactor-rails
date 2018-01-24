@@ -16,6 +16,7 @@ $.Redactor.opts.langs['he'] = {
 	header2: 'כותרת 2',
 	header3: 'כותרת 3',
 	header4: 'כותרת 4',
+	header5: 'כותרת 5',
 	bold:  'מודגש',
 	italic: 'מוטה',
 	fontcolor: 'צבע גופן',
@@ -67,6 +68,8 @@ $.Redactor.opts.langs['he'] = {
 	underline: 'קו תחתון',
 	alignment: 'יישור',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );
