@@ -16,6 +16,7 @@ $.Redactor.opts.langs['ru'] = {
 	header2: 'Заголовок 2',
 	header3: 'Заголовок 3',
 	header4: 'Заголовок 4',
+	header5: 'Заголовок 5',
 	bold:  'Полужирный',
 	italic: 'Наклонный',
 	fontcolor: 'Цвет текста',
@@ -68,6 +69,8 @@ $.Redactor.opts.langs['ru'] = {
 	underline: 'Подчеркнутый',
 	alignment: 'Выравнивание',
 	filename: 'Название (необязательно)',
-	edit: 'Ред.'
+	edit: 'Ред.',
+	center: 'По центру',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

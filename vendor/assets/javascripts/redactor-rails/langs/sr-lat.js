@@ -16,6 +16,7 @@ $.Redactor.opts.langs['sr-lat'] = {
 	header2: 'Zaglavlje 2',
 	header3: 'Zaglavlje 3',
 	header4: 'Zaglavlje 4',
+	header5: 'Zaglavlje 5',
 	bold: 'Podebljaj',
 	italic: 'Nakosi',
 	fontcolor: 'Boja slova',
@@ -71,6 +72,8 @@ $.Redactor.opts.langs['sr-lat'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

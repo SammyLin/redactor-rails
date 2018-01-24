@@ -6,7 +6,7 @@ $.Redactor.opts.langs['da'] = {
     table: 'Tabel',
     link: 'Hyperlink',
     link_insert: 'Indsæt Hyperlink ...',
-    link_edit: 'Edit link',
+    link_edit: 'Rediger link',
     unlink: 'Fjern Hyperlink',
     formatting: 'Formatering',
     paragraph: 'Paragraf',
@@ -16,6 +16,7 @@ $.Redactor.opts.langs['da'] = {
     header2: 'Overskrift 2',
     header3: 'Overskrift 3',
     header4: 'Overskrift 4',
+    header5: 'Overskrift 5',
     bold:  'Fed',
     italic: 'Kursiv',
     fontcolor: 'Skriftfarve',
@@ -61,13 +62,14 @@ $.Redactor.opts.langs['da'] = {
     align_right: 'Højrejuster',
     align_justify: 'Juster',
     horizontalrule: 'Indsæt Vandret Linje',
-    fullscreen: 'Fuldskærm',
     deleted: 'Slettet',
-    anchor: 'Anchor',
-	link_new_tab: 'Open link in new tab',
-	underline: 'Underline',
-	alignment: 'Alignment',
-	filename: 'Name (optional)',
-	edit: 'Edit'
+    anchor: 'Anker',
+	link_new_tab: 'Åben link i ny fane',
+	underline: 'Understreg',
+	alignment: 'Justering',
+	filename: 'Navn (valgfrit)',
+	edit: 'Rediger',
+	center: 'Centrer',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

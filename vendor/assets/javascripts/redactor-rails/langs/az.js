@@ -16,6 +16,7 @@ $.Redactor.opts.langs['az'] = {
 	header2: 'Başlıq 2',
 	header3: 'Başlıq 3',
 	header4: 'Başlıq 4',
+	header5: 'Başlıq 5',
 	bold:  'Qalın',
 	italic: 'Kursiv',
 	fontcolor: 'Yazı Rəngi',
@@ -67,6 +68,8 @@ $.Redactor.opts.langs['az'] = {
 	underline: 'Altıxətli',
 	alignment: 'Düzləndirmə',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

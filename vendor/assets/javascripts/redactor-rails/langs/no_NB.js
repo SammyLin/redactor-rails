@@ -16,6 +16,7 @@
 		header2: 'Overskrift 2',
 		header3: 'Overskrift 3',
 		header4: 'Overskrift 4',
+		header5: 'Overskrift 5',
 		bold: 'Fet',
 		italic: 'Kursiv',
 		fontcolor: 'Tekstfarge',
@@ -43,13 +44,13 @@
 		title: 'Tittel',
 		image_position: 'Plassering',
 		none: 'Ingen',
-		left: 'venstre',
+		left: 'Venstre',
 		right: 'H&oslash;yre',
 		image_web_link: 'Bildelink',
 		text: 'Tekst',
 		mailto: 'E-Post',
 		web: 'URL',
-		video_html_code: 'Kode for innbyggingsvideo',
+		video_html_code: 'Kode for innbyggingsvideo eller Youtube/Vimeo link',
 		file: 'Sett inn fil...',
 		upload: 'Last opp',
 		download: 'Last ned',
@@ -67,6 +68,8 @@
 		underline: 'Understreking',
 		alignment: 'Justering',
 		filename: 'Filnavn (valgfritt)',
-		edit: 'Edit'
+		edit: 'Endre',
+		center: 'Midten',
+		upload_label: 'Drop file here or '
 	};
 })(jQuery);

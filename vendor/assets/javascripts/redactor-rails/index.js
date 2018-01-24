@@ -1,2 +1,0 @@
-//= require ./redactor
-//= require ./config

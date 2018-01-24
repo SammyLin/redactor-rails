@@ -1,4 +1,3 @@
-
 (function ($) {
 $.Redactor.opts.langs['zh_tw'] = {
 	html: 'HTML',
@@ -17,6 +16,7 @@ $.Redactor.opts.langs['zh_tw'] = {
 	header2: '標題 2',
 	header3: '標題 3',
 	header4: '標題 4',
+	header5: '標題 5',
 	bold:  '將文字變成粗體',
 	italic: '將文字變成斜體',
 	fontcolor: '選擇文字顏色',
@@ -69,6 +69,7 @@ $.Redactor.opts.langs['zh_tw'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center'
 };
 })( jQuery );

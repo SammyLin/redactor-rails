@@ -16,6 +16,7 @@ $.Redactor.opts.langs['fa'] = {
 	header2: 'سرامد 2',
 	header3: 'سرامد 3',
 	header4: 'سرامد 4',
+	header5: 'سرامد 5',
 	bold:  'درشت',
 	italic: 'خمیده',
 	fontcolor: 'رنگ قلم',
@@ -68,6 +69,8 @@ $.Redactor.opts.langs['fa'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

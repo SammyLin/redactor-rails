@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
 	$.Redactor.opts.langs['hr'] = {
 		html: 'HTML',
 		video: 'Umetni video',
@@ -6,6 +6,7 @@
 		table: 'Tablica',
 		link: 'Poveznica',
 		link_insert: 'Umetni poveznicu',
+		link_edit: 'Uredi poveznicu',
 		unlink: 'Ukloni poveznicu',
 		formatting: 'Ure&#273ivanje',
 		paragraph: 'Paragraf',
@@ -15,6 +16,7 @@
 		header2: 'Zaglavlje 2',
 		header3: 'Zaglavlje 3',
 		header4: 'Zaglavlje 4',
+		header5: 'Zaglavlje 5',
 		bold: 'Podebljaj',
 		italic: 'Nakosi',
 		fontcolor: 'Boja slova',
@@ -44,6 +46,7 @@
 		none: 'Nema',
 		left: 'lijevo',
 		right: 'desno',
+		center: 'centriraj',
 		image_web_link: 'Internet adresa slike',
 		text: 'Tekst',
 		mailto: 'Email',
@@ -66,6 +69,8 @@
 		underline: 'Podvuci',
 		alignment: 'Poravnanje',
 		filename: 'Naziv (neobavezno)',
-		edit: 'Edit'
+		edit: 'Uredi',
+		fullscreen: 'Cijeli zaslon',
+		upload_label: 'Drop file here or '
 	};
 })(jQuery);

@@ -16,6 +16,7 @@ $.Redactor.opts.langs['id'] = {
     header2: 'Header 2',
     header3: 'Header 3',
     header4: 'Header 4',
+    header5: 'Header 5',
     bold:  'Tebal',
     italic: 'Miring',
     fontcolor: 'Warna Huruf',
@@ -68,6 +69,8 @@ $.Redactor.opts.langs['id'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );

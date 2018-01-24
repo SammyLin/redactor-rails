@@ -16,6 +16,7 @@ $.Redactor.opts.langs['ro'] = {
 	header2: 'Titlu 2',
 	header3: 'Titlu 3',
 	header4: 'Titlu 4',
+	header5: 'Titlu 5',
 	bold:  'Aldin (Bold)',
 	italic: 'Cursiv (Italic)',
 	fontcolor: 'Culoare font',
@@ -68,6 +69,8 @@ $.Redactor.opts.langs['ro'] = {
 	underline: 'Underline',
 	alignment: 'Alignment',
 	filename: 'Name (optional)',
-	edit: 'Edit'
+	edit: 'Edit',
+	center: 'Center',
+	upload_label: 'Drop file here or '
 };
 })( jQuery );
