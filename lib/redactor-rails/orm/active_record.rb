@@ -14,7 +14,7 @@ module RedactorRails
             base.class_eval do
               self.table_name = "redactor_assets"
 
-              belongs_to :assetable, :polymorphic => true
+              belongs_to :assetable, polymorphic: true, optional: true
               belongs_to RedactorRails.devise_user, :foreign_key => RedactorRails.devise_user_key
 
               if defined?(ActiveModel::ForbiddenAttributesProtection) && base.ancestors.include?(ActiveModel::ForbiddenAttributesProtection)
