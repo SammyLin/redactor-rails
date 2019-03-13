@@ -18,9 +18,11 @@ class RedactorRails::PicturesController < ApplicationController
     end
 
     if @picture.save
-      render :text => { :filelink => @picture.url }.to_json
+      # Necessary else the URL comes back as nil
+      @picture.reload
+      render json: { filelink: @picture.url(:content) }
     else
-      render json: { error: @picture.errors }
+      render json: { error: @picture.errors }, status: :unprocessable_entity
     end
   end
 
