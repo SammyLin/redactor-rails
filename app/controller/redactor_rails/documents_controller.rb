@@ -19,7 +19,7 @@ class RedactorRails::DocumentsController < ApplicationController
 
     if @document.save
       @document.reload
-      render json: { filelink: @document.url, filename: @document.filename }
+      render json: { filelink: @document.url, filename: @document.data_file_name }
     else
       render json: { error: @document.errors }, status: :unprocessable_entity
     end
